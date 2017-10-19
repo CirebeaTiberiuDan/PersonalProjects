@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/makereservation}" method="post">
+    <input type="text" th:value="${customer.firstName}" name="name"/>
+    <input type="text" th:value="${customer.lastName}" name="lastname"/>
+    <input type="text" th:value="${customer.email}" name="email"/>
+    <input type="number" th:value="${customer.phoneNumber}" name="phone"/>
+    <input type="date" th:value="${date}" name="date"/>
+    <button type="submit">Add</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<th:block th:each="reservation : ${reservations}">
+    <tr>
+        <td th:text="${reservation.firstName}">A Smoke Test'</td>
+        <td th:text="${item.lastname}">A Smoke Test'</td>
+    </tr>
+</th:block>
+</body>
+</html>

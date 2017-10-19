@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<th:block th:each="employee : ${employee}">
+    <tr>
+        <td th:text="${employee.firstName}">First Name</td>
+        <td th:text="${employee.lastName}">Last Name</td>
+        <!--<td th:text="${employee.gender}">Gender</td>-->
+        <!--<td th:text="${employee.age}">Age</td>-->
+    </tr>
+</th:block>
+</body>
+</html>
